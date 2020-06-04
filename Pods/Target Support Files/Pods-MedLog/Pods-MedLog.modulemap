@@ -1,0 +1,6 @@
+framework module Pods_MedLog {
+  umbrella header "Pods-MedLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

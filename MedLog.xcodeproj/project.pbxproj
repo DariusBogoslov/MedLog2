@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F9BFB7FCA07D409960B327F /* Pods_MedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280D615F270BA77DF736A438 /* Pods_MedLog.framework */; };
+		D675C8902460B0DA007292B8 /* MedicalRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675C88F2460B0DA007292B8 /* MedicalRecordsViewController.swift */; };
+		D675C8922461AF6A007292B8 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675C8912461AF6A007292B8 /* RequestsViewController.swift */; };
+		D675C8942461AF7F007292B8 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675C8932461AF7F007292B8 /* ScannerViewController.swift */; };
+		D675C8962461B084007292B8 /* MedicalRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675C8952461B084007292B8 /* MedicalRecords.swift */; };
+		D675C8992461B192007292B8 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = D675C8982461B192007292B8 /* CarBode */; };
+		D675C89B2461B1F9007292B8 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675C89A2461B1F9007292B8 /* Scanner.swift */; };
+		D675C89F246302F0007292B8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675C89E246302F0007292B8 /* EditProfileViewController.swift */; };
+		D675C8A124631232007292B8 /* Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675C8A024631232007292B8 /* Access.swift */; };
+		D6BC6DA62454C5F9007CB733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC6DA52454C5F9007CB733 /* AppDelegate.swift */; };
+		D6BC6DA82454C5F9007CB733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC6DA72454C5F9007CB733 /* SceneDelegate.swift */; };
+		D6BC6DAA2454C5F9007CB733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC6DA92454C5F9007CB733 /* ViewController.swift */; };
+		D6BC6DAD2454C5F9007CB733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BC6DAB2454C5F9007CB733 /* Main.storyboard */; };
+		D6BC6DB02454C5F9007CB733 /* MedLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6BC6DAE2454C5F9007CB733 /* MedLog.xcdatamodeld */; };
+		D6BC6DB22454C5FD007CB733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BC6DB12454C5FD007CB733 /* Assets.xcassets */; };
+		D6BC6DB52454C5FD007CB733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BC6DB32454C5FD007CB733 /* LaunchScreen.storyboard */; };
+		D6BC6DBD2454C764007CB733 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6BC6DBC2454C764007CB733 /* GoogleService-Info.plist */; };
+		D6BC6DBF2454C7BE007CB733 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC6DBE2454C7BE007CB733 /* SignUpViewController.swift */; };
+		D6BC6DC12454C7C9007CB733 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC6DC02454C7C9007CB733 /* LoginViewController.swift */; };
+		D6DB8D4E2455B12C0090D11E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB8D4D2455B12B0090D11E /* Utilities.swift */; };
+		D6DB8D512455C4410090D11E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB8D502455C4410090D11E /* Constants.swift */; };
+		D6DB8D532455D4BD0090D11E /* FirebaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB8D522455D4BD0090D11E /* FirebaseWorker.swift */; };
+		D6DB8D5524561C980090D11E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB8D5424561C980090D11E /* ProfileViewController.swift */; };
+		D6DB8D5924561F5B0090D11E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB8D5824561F5B0090D11E /* TabBarController.swift */; };
+		D6DB8D5B2456269B0090D11E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB8D5A2456269B0090D11E /* DashboardViewController.swift */; };
+		D6DB8D6B245B5A200090D11E /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB8D6A245B5A200090D11E /* Chart.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		194283F879750D82C2615F2D /* Pods-MedLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedLog.release.xcconfig"; path = "Target Support Files/Pods-MedLog/Pods-MedLog.release.xcconfig"; sourceTree = "<group>"; };
+		280D615F270BA77DF736A438 /* Pods_MedLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8650AB96DDB3B1A712DAD9F9 /* Pods-MedLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedLog.debug.xcconfig"; path = "Target Support Files/Pods-MedLog/Pods-MedLog.debug.xcconfig"; sourceTree = "<group>"; };
+		D675C88F2460B0DA007292B8 /* MedicalRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordsViewController.swift; sourceTree = "<group>"; };
+		D675C8912461AF6A007292B8 /* RequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		D675C8932461AF7F007292B8 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		D675C8952461B084007292B8 /* MedicalRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecords.swift; sourceTree = "<group>"; };
+		D675C89A2461B1F9007292B8 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		D675C89E246302F0007292B8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		D675C8A024631232007292B8 /* Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Access.swift; sourceTree = "<group>"; };
+		D6BC6DA22454C5F9007CB733 /* MedLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6BC6DA52454C5F9007CB733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6BC6DA72454C5F9007CB733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D6BC6DA92454C5F9007CB733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6BC6DAC2454C5F9007CB733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6BC6DAF2454C5F9007CB733 /* MedLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedLog.xcdatamodel; sourceTree = "<group>"; };
+		D6BC6DB12454C5FD007CB733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6BC6DB42454C5FD007CB733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6BC6DB62454C5FD007CB733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6BC6DBC2454C764007CB733 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D6BC6DBE2454C7BE007CB733 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D6BC6DC02454C7C9007CB733 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D6DB8D4D2455B12B0090D11E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		D6DB8D502455C4410090D11E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D6DB8D522455D4BD0090D11E /* FirebaseWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseWorker.swift; sourceTree = "<group>"; };
+		D6DB8D5424561C980090D11E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D6DB8D5824561F5B0090D11E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D6DB8D5A2456269B0090D11E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		D6DB8D6A245B5A200090D11E /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6BC6D9F2454C5F9007CB733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9BFB7FCA07D409960B327F /* Pods_MedLog.framework in Frameworks */,
+				D675C8992461B192007292B8 /* CarBode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCC402221DCC3CA420D60F03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				280D615F270BA77DF736A438 /* Pods_MedLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D675C8A224631377007292B8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC6DA92454C5F9007CB733 /* ViewController.swift */,
+				D6BC6DC02454C7C9007CB733 /* LoginViewController.swift */,
+				D6BC6DBE2454C7BE007CB733 /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D675C8A324631389007292B8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D6DB8D5824561F5B0090D11E /* TabBarController.swift */,
+				D6DB8D5A2456269B0090D11E /* DashboardViewController.swift */,
+				D675C88F2460B0DA007292B8 /* MedicalRecordsViewController.swift */,
+				D675C8912461AF6A007292B8 /* RequestsViewController.swift */,
+				D675C8932461AF7F007292B8 /* ScannerViewController.swift */,
+				D6DB8D5424561C980090D11E /* ProfileViewController.swift */,
+				D675C89E246302F0007292B8 /* EditProfileViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D675C8A4246313C9007292B8 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				D6DB8D6A245B5A200090D11E /* Chart.swift */,
+				D675C8952461B084007292B8 /* MedicalRecords.swift */,
+				D675C8A024631232007292B8 /* Access.swift */,
+				D675C89A2461B1F9007292B8 /* Scanner.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		D6BC6D992454C5F9007CB733 = {
+			isa = PBXGroup;
+			children = (
+				D6BC6DA42454C5F9007CB733 /* MedLog */,
+				D6BC6DA32454C5F9007CB733 /* Products */,
+				EDC83006CFAA5D85DBAD75EB /* Pods */,
+				CCC402221DCC3CA420D60F03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6BC6DA32454C5F9007CB733 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC6DA22454C5F9007CB733 /* MedLog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6BC6DA42454C5F9007CB733 /* MedLog */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC6DBC2454C764007CB733 /* GoogleService-Info.plist */,
+				D6BC6DA52454C5F9007CB733 /* AppDelegate.swift */,
+				D6BC6DA72454C5F9007CB733 /* SceneDelegate.swift */,
+				D6BC6DAB2454C5F9007CB733 /* Main.storyboard */,
+				D6BC6DB32454C5FD007CB733 /* LaunchScreen.storyboard */,
+				D6BC6DB62454C5FD007CB733 /* Info.plist */,
+				D6BC6DAE2454C5F9007CB733 /* MedLog.xcdatamodeld */,
+				D6DB8D4F2455B1420090D11E /* Helpers */,
+				D6BC6DC42454C7DA007CB733 /* ViewControllers */,
+				D6BC6DB12454C5FD007CB733 /* Assets.xcassets */,
+			);
+			path = MedLog;
+			sourceTree = "<group>";
+		};
+		D6BC6DC42454C7DA007CB733 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D675C8A224631377007292B8 /* Auth */,
+				D675C8A324631389007292B8 /* TabBar */,
+				D675C8A4246313C9007292B8 /* SwiftUI */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D6DB8D4F2455B1420090D11E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D6DB8D4D2455B12B0090D11E /* Utilities.swift */,
+				D6DB8D502455C4410090D11E /* Constants.swift */,
+				D6DB8D522455D4BD0090D11E /* FirebaseWorker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EDC83006CFAA5D85DBAD75EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8650AB96DDB3B1A712DAD9F9 /* Pods-MedLog.debug.xcconfig */,
+				194283F879750D82C2615F2D /* Pods-MedLog.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6BC6DA12454C5F9007CB733 /* MedLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6BC6DB92454C5FD007CB733 /* Build configuration list for PBXNativeTarget "MedLog" */;
+			buildPhases = (
+				93CE3373B664CE10A968787C /* [CP] Check Pods Manifest.lock */,
+				D6BC6D9E2454C5F9007CB733 /* Sources */,
+				D6BC6D9F2454C5F9007CB733 /* Frameworks */,
+				D6BC6DA02454C5F9007CB733 /* Resources */,
+				2C5CF2F558C5F559315226C9 /* [CP] Embed Pods Frameworks */,
+				766D21E6113F087887C12063 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedLog;
+			packageProductDependencies = (
+				D675C8982461B192007292B8 /* CarBode */,
+			);
+			productName = MedLog;
+			productReference = D6BC6DA22454C5F9007CB733 /* MedLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6BC6D9A2454C5F9007CB733 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Darius Bogoslov";
+				TargetAttributes = {
+					D6BC6DA12454C5F9007CB733 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D6BC6D9D2454C5F9007CB733 /* Build configuration list for PBXProject "MedLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6BC6D992454C5F9007CB733;
+			packageReferences = (
+				D675C8972461B192007292B8 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+			);
+			productRefGroup = D6BC6DA32454C5F9007CB733 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6BC6DA12454C5F9007CB733 /* MedLog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6BC6DA02454C5F9007CB733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6BC6DB52454C5FD007CB733 /* LaunchScreen.storyboard in Resources */,
+				D6BC6DBD2454C764007CB733 /* GoogleService-Info.plist in Resources */,
+				D6BC6DB22454C5FD007CB733 /* Assets.xcassets in Resources */,
+				D6BC6DAD2454C5F9007CB733 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C5CF2F558C5F559315226C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedLog/Pods-MedLog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedLog/Pods-MedLog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedLog/Pods-MedLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		766D21E6113F087887C12063 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedLog/Pods-MedLog-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedLog/Pods-MedLog-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedLog/Pods-MedLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93CE3373B664CE10A968787C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6BC6D9E2454C5F9007CB733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6BC6DC12454C7C9007CB733 /* LoginViewController.swift in Sources */,
+				D6BC6DAA2454C5F9007CB733 /* ViewController.swift in Sources */,
+				D675C8922461AF6A007292B8 /* RequestsViewController.swift in Sources */,
+				D6BC6DA62454C5F9007CB733 /* AppDelegate.swift in Sources */,
+				D675C89B2461B1F9007292B8 /* Scanner.swift in Sources */,
+				D6BC6DA82454C5F9007CB733 /* SceneDelegate.swift in Sources */,
+				D6DB8D532455D4BD0090D11E /* FirebaseWorker.swift in Sources */,
+				D675C89F246302F0007292B8 /* EditProfileViewController.swift in Sources */,
+				D675C8942461AF7F007292B8 /* ScannerViewController.swift in Sources */,
+				D6BC6DB02454C5F9007CB733 /* MedLog.xcdatamodeld in Sources */,
+				D675C8902460B0DA007292B8 /* MedicalRecordsViewController.swift in Sources */,
+				D675C8962461B084007292B8 /* MedicalRecords.swift in Sources */,
+				D6DB8D5524561C980090D11E /* ProfileViewController.swift in Sources */,
+				D675C8A124631232007292B8 /* Access.swift in Sources */,
+				D6DB8D6B245B5A200090D11E /* Chart.swift in Sources */,
+				D6DB8D5B2456269B0090D11E /* DashboardViewController.swift in Sources */,
+				D6DB8D4E2455B12C0090D11E /* Utilities.swift in Sources */,
+				D6DB8D5924561F5B0090D11E /* TabBarController.swift in Sources */,
+				D6BC6DBF2454C7BE007CB733 /* SignUpViewController.swift in Sources */,
+				D6DB8D512455C4410090D11E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6BC6DAB2454C5F9007CB733 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6BC6DAC2454C5F9007CB733 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6BC6DB32454C5FD007CB733 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6BC6DB42454C5FD007CB733 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6BC6DB72454C5FD007CB733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6BC6DB82454C5FD007CB733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6BC6DBA2454C5FD007CB733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8650AB96DDB3B1A712DAD9F9 /* Pods-MedLog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 943K32NGSF;
+				INFOPLIST_FILE = MedLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DariusBogoslov.MedLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D6BC6DBB2454C5FD007CB733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 194283F879750D82C2615F2D /* Pods-MedLog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 943K32NGSF;
+				INFOPLIST_FILE = MedLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DariusBogoslov.MedLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6BC6D9D2454C5F9007CB733 /* Build configuration list for PBXProject "MedLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6BC6DB72454C5FD007CB733 /* Debug */,
+				D6BC6DB82454C5FD007CB733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6BC6DB92454C5FD007CB733 /* Build configuration list for PBXNativeTarget "MedLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6BC6DBA2454C5FD007CB733 /* Debug */,
+				D6BC6DBB2454C5FD007CB733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D675C8972461B192007292B8 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D675C8982461B192007292B8 /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D675C8972461B192007292B8 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D6BC6DAE2454C5F9007CB733 /* MedLog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D6BC6DAF2454C5F9007CB733 /* MedLog.xcdatamodel */,
+			);
+			currentVersion = D6BC6DAF2454C5F9007CB733 /* MedLog.xcdatamodel */;
+			path = MedLog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D6BC6D9A2454C5F9007CB733 /* Project object */;
+}
